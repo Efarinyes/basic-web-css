@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Learning Frontend: second project - Contact Page ">
+    <meta name="author" content="Eduard Farinyes">
+    <meta property="og:description"
+    content="Eduard Faarinyes's website. He's a web developer and this is the site where he post his works, achievements and education" />
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Personal Portfolio - Contact</title>
+    <title>Contact</title>
+</head>
+<body>
+    <header class="header">
+        <span class="logo">
+            - Pep Fornés
+        </span>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+               
+                <li>
+                    <a href="articles.html">Articles</a>
+                </li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <h1 class="hero__h1">Frontend Developer</h1>
+            <h4>html only with a proper layout</h4>
+            
+        </section>
+        <section class="contact">
+            <form action="https://httpbin.org/get" method="get">
+                <h1 class="contact__h1">Contact me!!</h1>
+                <fieldset class="contact__fieldset">
+                    <legend class="contact__legend">Personal Information</legend>
+                    <p>
+                        <label for="firstName" class="contact__label">Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Your name here..." autocomplete="on" required autofocus class="contact__input">
+                    </p>
+                    <p>
+                        <label for="lastName" class="contact__label">Your last name:</label>
+                        <input class="contact__input" type="text" name="lastName" id="lastName" placeholder="Your lastName here..." autocomplete="on" required>
+                    </p>
+                    
+                    <p>
+                        <label for="telephone" class="contact__label">Telèfon:</label>
+                        <input class="contact__input" type="tel" name="telephone" id="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555" required>
+                    </p>
+                    
+                </fieldset>
+                <br>
+                <fieldset class="contact__fieldset">
+                    <legend class="contact__legend">We send your message</legend>
+                    <label class="contact__label" for="message"> Your comment</label>
+                    <br>
+                    <textarea class="contact__textarea" name="missatge" id="message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+                </fieldset>
+                <br>
+                <button class="contact__button" type="submit">Send</button>
+                <button class="contact__button" type="reset">Erase</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__p">
+            &copy; all rights reserved - 2025
+        </p>
+        <span class="footer__small">All the personal data on this website are fictitious and do not correspond to any real person.</span>
+    </footer>
+</body>
+</html>
